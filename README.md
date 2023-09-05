@@ -7,7 +7,7 @@ This code is deveide mainly in 6 parts
 3. Infrastructure > Identity
 4. Infrastructure > Persistence
 5. Web > Api
-6. TodoApp(Frontend in angular)
+6. Frontend(Frontend project in angular)
 
 Go to TodoApp Folder And
 
@@ -57,9 +57,10 @@ This contains all the apis.<br/>
 This also maintain all middleware and filters by default all apis will be authorized but only those who has [allowanonymous] on top of them can be accessed by anyone.
 
 
-TodoApp
+Frontend
 -------------
 This is out angular application which has all frontend implementations.
 You can register your self and use app for your tasks.
 After registering you don't need to login it will automatically log you in.<br>
-And you will be redirected to todo page. Where you can have all your todo you can add new. mark exisiting as done and also delete any one you want.
+And you will be redirected to todo page. Where you can have all your todo you can add new. mark exisiting as done and also delete any one you want.<br>
+I have used Angular Material for better ui ux.
