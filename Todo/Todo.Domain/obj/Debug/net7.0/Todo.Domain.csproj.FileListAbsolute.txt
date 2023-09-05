@@ -10,3 +10,15 @@ D:\Shubham\Learn\dotnetlearn\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\Todo
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\refint\Todo.Domain.dll
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\Todo.Domain.pdb
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\ref\Todo.Domain.dll
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Domain\bin\Debug\net7.0\Todo.Domain.deps.json
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Domain\bin\Debug\net7.0\Todo.Domain.dll
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Domain\bin\Debug\net7.0\Todo.Domain.pdb
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\Todo.Domain.csproj.AssemblyReference.cache
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\Todo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\Todo.Domain.AssemblyInfoInputs.cache
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\Todo.Domain.AssemblyInfo.cs
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\Todo.Domain.csproj.CoreCompileInputs.cache
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\Todo.Domain.dll
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\refint\Todo.Domain.dll
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\Todo.Domain.pdb
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Domain\obj\Debug\net7.0\ref\Todo.Domain.dll

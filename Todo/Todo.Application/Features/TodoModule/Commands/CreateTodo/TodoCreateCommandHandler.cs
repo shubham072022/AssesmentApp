@@ -21,12 +21,14 @@ namespace Todo.Application.Features.TodoModule.Commands.CreateTodo
 
         public async Task<IResponse> Handle(TodoCreateCommandRequest request,CancellationToken cancellationToken)
         {
+            var user = await _currentUser.GetCurrentUser();
+
             var todo = new TodoM()
             {
                 Id = 0,
                 Title = request.Title,
                 IsCompleted = request.IsCompleted,
-                UserId = _currentUser.GetCurrentUser().Id,
+                UserId = user.UserId,
             };
 
             todo = await _command.TodoCommandRepository.AddAsync(todo);

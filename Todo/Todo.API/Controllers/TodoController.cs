@@ -19,14 +19,14 @@ namespace Todo.API.Controllers
 
         [HttpPost]
         [Route("add")]
-        public async Task<IResponse> Add(TodoCreateCommandRequest request)
+        public async Task<IResponse> Add([FromBody] TodoCreateCommandRequest request)
         {
             return await Mediator.Send(request);
         }
 
         [HttpPut]
         [Route("update")]
-        public async Task<IResponse> Update(TodoEditCommandRequest request)
+        public async Task<IResponse> Update([FromBody] TodoEditCommandRequest request)
         {
             return await Mediator.Send(request);
         }

@@ -29,10 +29,11 @@ namespace Todo.Application.Features.TodoModule.Queries.GetAllTodos
             ,CancellationToken cancellationToken)
         {
             List<TodoDTO> todos = new List<TodoDTO>();
+            var user = await _currentUserService.GetCurrentUser();
 
             //Only user specific tasks will appear
             todos = await (await _query.TodoQueryRepository.GetAllAsyn())
-                .Where(t => t.UserId == _currentUserService.GetCurrentUser().Result.UserId)
+                .Where(t => t.UserId == user.UserId)
                 .AsNoTracking()
                 .ProjectTo<TodoDTO>(_mapper.ConfigurationProvider)
                 .ToListAsync(cancellationToken);

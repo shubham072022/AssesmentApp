@@ -1,7 +1,7 @@
 # AssesmentApp
 Assesment Todo App For Uplers interview
 
-This code is deveide mainly in 6 parts
+This code is devide mainly in 6 parts
 1. Core > Domain
 2. Core > Application
 3. Infrastructure > Identity
@@ -33,19 +33,19 @@ Todo.Application
 This is the application layor for the project which contains all commands and query
 
 We use mediator for behavior pattern
-and other than that you can find repository patter and unitofwork pattern to keep code simple and easily maintainable.
+and other than that you can find repository pattern and unitofwork pattern to keep code simple and easily maintainable.
 
 It also use fluent validation to validate commands and has dependency injection to make all the process service oriented. And maintains all the behaviors so you don't need to invoke validation or exception behavior manually
 
 Todo.Identity
 -------------
-This one has all the user identity realted model and database configuration although it targets same database as persistence.
+This one has all the user identity related model and database configuration although it targets same database as persistence.
 
 And you can find all IAuthenticationRepository implementation here also Token Service and User Service implementations.
 
 Todo.Persistence
 -------------------
-This one has all the database configuration related todo master and contains all repositories and unitof work regarding that.
+This one has all the database configuration related todo master and contains all repositories and unit of work regarding that.
 
 Todo.Shared
 ------------

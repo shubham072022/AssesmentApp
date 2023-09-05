@@ -23,6 +23,7 @@ export class TasksComponent {
   }
 
   add(todo:TodoCreateModel){
+    todo.isCompleted = false;
     this.service.addTodo(todo);
   }
 
