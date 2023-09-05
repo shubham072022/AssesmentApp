@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.auth-card{
+    min-width: 350px;
+    padding: 10px 20px;
+    border-radius: 0% !important;
+    .auth-form{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        mat-form-field{
+            margin: 5px 0;
+        }
+    }
+}
+
+.btn{
+    font-size: 1.1rem !important;
+    padding: 10px 20px !important;
+}
+
+.btn-primary{
+    background-color: #C4DFDF !important;
+}
+
+.mdc-button--raised{
+    padding: 20px 20px !important;
+}
+
+.icon-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mat-mdc-form-field-subscript-wrapper{
+    display: none !important;
+}
+
+
+.task-card{
+    min-width: 400px;
+    padding: 10px;
+    border-radius: 0% !important;
+    margin-bottom: 10px;
+}

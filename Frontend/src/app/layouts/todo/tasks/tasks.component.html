@@ -1,0 +1,7 @@
+<div class="task-section">
+    <button mat-fab title="Logout" class="logout-btn" (click)="logout()">
+        <mat-icon>logout</mat-icon>
+    </button>
+    <app-taskform (addTodo)="add($event)"></app-taskform>
+    <app-tasklist [todos$]="todos$" (modify)="modify($event)" (delete)="delete($event)"></app-tasklist>
+</div>

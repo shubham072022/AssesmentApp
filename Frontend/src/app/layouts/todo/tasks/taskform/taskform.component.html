@@ -1,0 +1,11 @@
+<mat-card class="task-card">
+    <form action="" class="task-form" [formGroup]="todoForm" (ngSubmit)="save()">
+        <mat-form-field appearance="outline">
+            <mat-label>Task</mat-label>
+            <input type="text" matInput formControlName="title" />
+        </mat-form-field>
+        <button mat-fab class="btn-primary" aria-label="Example icon button with a bookmark icon">
+            <mat-icon>add</mat-icon>
+        </button>
+    </form>
+</mat-card>
