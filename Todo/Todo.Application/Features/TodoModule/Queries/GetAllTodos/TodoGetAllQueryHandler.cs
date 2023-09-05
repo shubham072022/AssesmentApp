@@ -30,6 +30,7 @@ namespace Todo.Application.Features.TodoModule.Queries.GetAllTodos
         {
             List<TodoDTO> todos = new List<TodoDTO>();
 
+            //Only user specific tasks will appear
             todos = await (await _query.TodoQueryRepository.GetAllAsyn())
                 .Where(t => t.UserId == _currentUserService.GetCurrentUser().Result.UserId)
                 .AsNoTracking()
