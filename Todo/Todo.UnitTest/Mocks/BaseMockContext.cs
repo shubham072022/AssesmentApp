@@ -1,12 +1,11 @@
 ﻿using AutoMapper;
-using Microsoft.Office.Interop.Excel;
 using Todo.Application.Common.Mappings;
 
 namespace Todo.UnitTest.Mocks
 {
     public class BaseMockContext
     {
-        private readonly IMapper _mapper;
+        protected readonly IMapper mapper;
         public BaseMockContext()
         {
             var mapperConfig = new MapperConfiguration(c =>
@@ -14,7 +13,7 @@ namespace Todo.UnitTest.Mocks
                 c.AddProfile<MappingProfile>();
             });
 
-            _mapper = mapperConfig.CreateMapper();
+            mapper = mapperConfig.CreateMapper();
         }
     }
 }

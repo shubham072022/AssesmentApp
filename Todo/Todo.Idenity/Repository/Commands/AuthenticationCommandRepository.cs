@@ -15,12 +15,12 @@ namespace Todo.Idenity.Repository.Commands
     public class AuthenticationCommandRepository : IAuthenticationCommandRepository
     {
         private readonly UserManager<ApplicationUser> _userManager;
-        private readonly TodoIdentityDbContext _db;
+        private readonly ITodoIdentityDbContext _db;
         private readonly ITokenService _tokenService;
         private readonly ICurrentUserService _currentUserService;
 
         public AuthenticationCommandRepository(UserManager<ApplicationUser> userManager,
-            TodoIdentityDbContext db
+            ITodoIdentityDbContext db
             ,ITokenService tokenService
             ,ICurrentUserService currentUserService)
         {

@@ -4,10 +4,26 @@
         <mat-form-field appearance="outline">
             <mat-label>Email</mat-label>
             <input type="email" matInput formControlName="email" />
+            <mat-error *ngIf="loginForm.controls['email'].invalid">
+                <ng-container *ngFor="let validation of validationMessages.password">
+                    <ng-container class="text-red-500 text-xs mt-1"
+                        *ngIf="loginForm.controls['email'].hasError(validation.type)">
+                        {{ validation.message }}
+                    </ng-container>
+                </ng-container>
+            </mat-error>
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Password</mat-label>
             <input type="password" matInput formControlName="password" />
+            <mat-error *ngIf="loginForm.controls['password'].invalid">
+                <ng-container *ngFor="let validation of validationMessages.password">
+                    <ng-container class="text-red-500 text-xs mt-1"
+                        *ngIf="loginForm.controls['password'].hasError(validation.type)">
+                        {{ validation.message }}
+                    </ng-container>
+                </ng-container>
+            </mat-error>
         </mat-form-field>
         <button mat-raised-button class="btn btn-primary">Login</button>
         <span style="display: flex;margin-top: 10px;">Don't have account?<a [routerLink]="['/auth/register']"  style="margin: 0 5px;">Register</a>Here</span>

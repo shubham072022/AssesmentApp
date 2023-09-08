@@ -3,40 +3,47 @@ using Todo.Application.Common.Constants;
 using Todo.Application.Common.Interfaces;
 using Todo.Application.Common.Wrapper.Abstract;
 using Todo.Application.Common.Wrapper.Concrete;
-using Todo.Application.UnitOfWork;
 using Todo.Domain.Entities;
 
 namespace Todo.Application.Features.TodoModule.Commands.CreateTodo
 {
     public class TodoCreateCommandHandler : IRequestHandler<TodoCreateCommandRequest,IResponse>
     {
-        private readonly ICommandUnitOfWork _command;
+        private readonly ITodoDbContext _db;
         private readonly ICurrentUserService _currentUser;
-        public TodoCreateCommandHandler(ICommandUnitOfWork command
+        public TodoCreateCommandHandler(ITodoDbContext db
             ,ICurrentUserService currentUser) 
         {
             _currentUser = currentUser;
-            _command = command;
+            _db = db;
         }
 
         public async Task<IResponse> Handle(TodoCreateCommandRequest request,CancellationToken cancellationToken)
         {
-            var user = await _currentUser.GetCurrentUser();
-
-            var todo = new TodoM()
+            try
             {
-                Id = 0,
-                Title = request.Title,
-                IsCompleted = request.IsCompleted,
-                UserId = user.UserId,
-            };
+                var user = await _currentUser.GetCurrentUser();
 
-            todo = await _command.TodoCommandRepository.AddAsync(todo);
-            if(todo == null)
-            {
-                return new ErrorResponse(CustomStatusCodes.InternalServerError, "Please check your data");
+                TodoM todo = new TodoM()
+                {
+                    Id = 0,
+                    Title = request.Title,
+                    IsCompleted = request.IsCompleted,
+                    UserId = user.UserId,
+                };
+
+                await _db.TodoM.AddAsync(todo);
+                await _db.SaveChangesAsync(cancellationToken);
+                if (todo == null)
+                {
+                    return new ErrorResponse(CustomStatusCodes.InternalServerError, "Please check your data");
+                }
+                return new SuccessResponse(CustomStatusCodes.Accepted, "Task created successfully.");
             }
-            return new SuccessResponse(CustomStatusCodes.Accepted, "Task created successfully.");
+            catch (Exception ex)
+            {
+                return new ErrorResponse(CustomStatusCodes.InternalServerError, ex.Message);
+            }
         }
     }
 }

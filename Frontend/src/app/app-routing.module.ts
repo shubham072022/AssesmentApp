@@ -8,6 +8,10 @@ const routes: Routes = [
     loadChildren: () => import('./layouts/auth/auth.module').then( m => m.AuthModule)
   },
   {
+    path:'',
+    loadChildren: () => import('./layouts/auth/auth.module').then( m => m.AuthModule)
+  },
+  {
     path:'todo',
     loadChildren: () => import('./layouts/todo/todo.module').then(m => m.TodoModule),
     canActivate:[AuthGuard]

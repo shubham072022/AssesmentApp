@@ -9,7 +9,7 @@ namespace Todo.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<TodoM> builder)
         {
-            builder.Property(x => x.Title).HasMaxLength(200).IsRequired(true);
+            builder.Property(x => x.Title).IsRequired(true).HasMaxLength(200);
             builder.Property(x => x.IsCompleted).HasDefaultValue(false);
         }
     }

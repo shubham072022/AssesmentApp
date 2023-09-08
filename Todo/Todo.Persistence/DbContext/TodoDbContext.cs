@@ -8,7 +8,7 @@ using Todo.Domain.Entities;
 
 namespace Todo.Persistence.DbContext
 {
-    public class TodoDbContext : Microsoft.EntityFrameworkCore.DbContext
+    public class TodoDbContext : Microsoft.EntityFrameworkCore.DbContext,ITodoDbContext
     {
 
         private readonly IMediator Mediator;

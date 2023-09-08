@@ -1,8 +1,0 @@
-{
-  "Todo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Shubham\\Learn\\dotnetlearn\\AssesmentApp\\Todo\\Todo.API",
-  "Todo.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Shubham\\Learn\\dotnetlearn\\AssesmentApp\\Todo\\Todo.Application",
-  "Todo.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Shubham\\Learn\\dotnetlearn\\AssesmentApp\\Todo\\Todo.Domain",
-  "Todo.Idenity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Shubham\\Learn\\dotnetlearn\\AssesmentApp\\Todo\\Todo.Idenity",
-  "Todo.Persistence, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Shubham\\Learn\\dotnetlearn\\AssesmentApp\\Todo\\Todo.Persistence",
-  "Todo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Shubham\\Learn\\dotnetlearn\\AssesmentApp\\Todo\\Todo.Shared"
-}

@@ -3402,6 +3402,22 @@
           "bin/placeholder/Todo.Idenity.dll": {}
         }
       },
+      "Todo.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "7.0.0",
+          "Todo.Application": "1.0.0",
+          "Todo.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Todo.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Todo.Persistence.dll": {}
+        }
+      },
       "Todo.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -9563,6 +9579,11 @@
       "path": "../Todo.Idenity/Todo.Idenity.csproj",
       "msbuildProject": "../Todo.Idenity/Todo.Idenity.csproj"
     },
+    "Todo.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Todo.Persistence/Todo.Persistence.csproj",
+      "msbuildProject": "../Todo.Persistence/Todo.Persistence.csproj"
+    },
     "Todo.Shared/1.0.0": {
       "type": "project",
       "path": "../Todo.Shared/Todo.Shared.csproj",
@@ -9577,6 +9598,7 @@
       "Shouldly >= 4.2.1",
       "Todo.Application >= 1.0.0",
       "Todo.Idenity >= 1.0.0",
+      "Todo.Persistence >= 1.0.0",
       "coverlet.collector >= 3.2.0",
       "xunit >= 2.4.2",
       "xunit.runner.visualstudio >= 2.4.5"
@@ -9618,6 +9640,9 @@
             },
             "D:\\Shubham\\Learn\\dotnetlearn\\AssesmentApp\\AssesmentApp\\Todo\\Todo.Idenity\\Todo.Idenity.csproj": {
               "projectPath": "D:\\Shubham\\Learn\\dotnetlearn\\AssesmentApp\\AssesmentApp\\Todo\\Todo.Idenity\\Todo.Idenity.csproj"
+            },
+            "D:\\Shubham\\Learn\\dotnetlearn\\AssesmentApp\\AssesmentApp\\Todo\\Todo.Persistence\\Todo.Persistence.csproj": {
+              "projectPath": "D:\\Shubham\\Learn\\dotnetlearn\\AssesmentApp\\AssesmentApp\\Todo\\Todo.Persistence\\Todo.Persistence.csproj"
             }
           }
         }

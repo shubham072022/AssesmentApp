@@ -1,4 +1,9 @@
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\bin\Debug\net7.0\CoverletSourceRootsMapping
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\Todo.Architecture.Test.csproj.AssemblyReference.cache
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\Todo.Architecture.Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\Todo.Architecture.Test.AssemblyInfoInputs.cache
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\Todo.Architecture.Test.AssemblyInfo.cs
+D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\Todo.Architecture.Test.csproj.CoreCompileInputs.cache
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\bin\Debug\net7.0\testhost.dll
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\bin\Debug\net7.0\Todo.API.deps.json
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\bin\Debug\net7.0\Todo.API.runtimeconfig.json
@@ -215,11 +220,6 @@ D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Te
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\bin\Debug\net7.0\Todo.Idenity.pdb
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\bin\Debug\net7.0\Todo.Persistence.pdb
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\bin\Debug\net7.0\Todo.Shared.pdb
-D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\Todo.Architecture.Test.csproj.AssemblyReference.cache
-D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\Todo.Architecture.Test.GeneratedMSBuildEditorConfig.editorconfig
-D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\Todo.Architecture.Test.AssemblyInfoInputs.cache
-D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\Todo.Architecture.Test.AssemblyInfo.cs
-D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\Todo.Architecture.Test.csproj.CoreCompileInputs.cache
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\Todo.Architecture.Test.csproj.CopyComplete
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\Todo.Architecture.Test.dll
 D:\Shubham\Learn\dotnetlearn\AssesmentApp\AssesmentApp\Todo\Todo.Architecture.Test\obj\Debug\net7.0\refint\Todo.Architecture.Test.dll

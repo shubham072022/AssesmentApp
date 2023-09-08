@@ -1,27 +1,39 @@
 ﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
+using Todo.Application.Common.Constants;
+using Todo.Application.Common.Interfaces;
 using Todo.Application.Common.Wrapper.Abstract;
-using Todo.Application.UnitOfWork;
+using Todo.Application.Common.Wrapper.Concrete;
 
 namespace Todo.Application.Features.TodoModule.Commands.EditTodo
 {
     public class TodoEditCommandHandler : IRequestHandler<TodoEditCommandRequest, IResponse>
     {
-        private readonly ICommandUnitOfWork _command;
-        private readonly IQueryUnitOfWork _query;
+        private readonly ITodoDbContext _db;
 
-        public TodoEditCommandHandler(ICommandUnitOfWork command
-            , IQueryUnitOfWork query)
+        public TodoEditCommandHandler(ITodoDbContext db)
         {
-            _command = command;
-            _query = query;
+            _db = db;
         }
 
         public async Task<IResponse> Handle(TodoEditCommandRequest request, CancellationToken cancellationToken)
         {
-            var todo = await _query.TodoQueryRepository.GetByIdAsync(request.Id);
-            todo.Title = request.Title;
-            todo.IsCompleted = request.IsCompleted;
-            return await _command.TodoCommandRepository.Update(todo);
+            try
+            {
+                var todo = await _db.TodoM.FirstOrDefaultAsync(t => t.Id == request.Id);
+                if (todo == null)
+                {
+                    return new ErrorResponse(CustomStatusCodes.NotFound, Messages.NoDataFound);
+                }
+                todo.Title = request.Title;
+                todo.IsCompleted = request.IsCompleted;
+                await _db.SaveChangesAsync(cancellationToken);
+                return new SuccessResponse(CustomStatusCodes.Accepted, Messages.UpdatedSuccessfully);
+            }
+            catch (Exception ex)
+            {
+                return new ErrorResponse(CustomStatusCodes.InternalServerError, ex.Message);
+            }
         }
     }
 }

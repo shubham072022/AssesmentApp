@@ -9,6 +9,10 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LoginComponent {
   loginForm:FormGroup = new FormGroup({});
+  validationMessages = {
+    email: [{ type: 'required', message: 'Email is required!' },{type:'email', message:'Enter valid email!'}],
+    password: [{ type: 'required', message: 'Password is required!' }]
+  }
 
   constructor(private fb:FormBuilder,private service:AuthService)
   {
@@ -19,6 +23,8 @@ export class LoginComponent {
   }
 
   login(){
+    this.loginForm.markAllAsTouched();
+    this.loginForm.markAsDirty();
     if(this.loginForm.valid){
       this.service.login(this.loginForm.value);
     }

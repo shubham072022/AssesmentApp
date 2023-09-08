@@ -29,6 +29,8 @@ namespace Todo.Idenity
                 .AddEntityFrameworkStores<TodoIdentityDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddScoped<ITodoIdentityDbContext>(provider => provider.GetRequiredService<TodoIdentityDbContext>());
+
             services.Configure<JWTSettings>(configuration.GetSection("JWTSettings"));
 
             var jwtSettings = configuration.GetSection("JWTSettings")
